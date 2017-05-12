@@ -4,10 +4,11 @@ VCFAnalyzer reads multiple VCF files, and finds suspicious regions in the mappin
 Suspicious regions are regions where the coverage is larger than mean_coverage + standand_deviation_coverage. This region has a much higher coverage compared to the other positions.
 
 Usage: 
-VCFAnalyzer -i `<path to input>` -t `<number of threads>`
+VCFAnalyzer -i `<path to input>` -o `<path to result folder>` -t `<number of threads>`
     
-  `<path to input>`       : single VCF file or path to directory with multiple VCF files <br />
-  `<number of threads>`   : number of available threads
+  `<path to input>`         : single VCF file or path to directory with multiple VCF files <br />
+  `<number of threads>`     : number of available threads <br />
+  `<path to result folder>` : path to results folder
 
 The tool finds these regions, and generates a set of output files for each VCF file:
   - the fasta sequence
