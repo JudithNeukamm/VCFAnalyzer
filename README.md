@@ -7,9 +7,8 @@ Usage:
 VCFAnalyzer -i `<path to input>` -o `<path to result folder>` -t `<number of threads>`
     
   `<path to input>`         : single VCF file or path to directory with multiple VCF files <br />
-  `<number of threads>`     : number of available threads <br />
-  `<path to result folder>` : path to results folder
-
+  `<path to result folder>` : path to results folder <br />
+ `<number of threads>`     : number of available threads
 The tool finds these regions, and generates a set of output files for each VCF file:
   - the fasta sequence
   - the start and end positons of the suspicious regions
